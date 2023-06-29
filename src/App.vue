@@ -41,30 +41,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-ul {
-  list-style-type: none;
-  display: flex;
-}
-
-ul li a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  font-family: open sans condensed;
-}
-
-/* header */
-header {
-  background-color: white;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-ul li a:hover {
-  color: #0c7cec;
-}
 </style>
