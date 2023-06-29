@@ -15,13 +15,13 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <!-- header -->
-    <AppHeader />
-
-  </div>
+  <!-- header -->
+  <AppHeader />
+  <!-- main -->
+  <AppMain />
+  <!-- footer -->
 </template>
 
 <style lang="scss">
-@use './assets/scss/style.scss'
+@use './assets/scss/style.scss';
 </style>

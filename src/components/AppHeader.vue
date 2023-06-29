@@ -61,25 +61,30 @@ export default {
 
 <template>
     <header>
-        <figure class="logo">
-            <img src="../assets/img/dc-logo.png" alt="logo">
-        </figure>
-        <ul>
-            <li v-for="item in items" :key="item.text">
-                <a :href="item.url">{{ item.text }}</a>
-            </li>
-        </ul>
+        <div class="container" id="navbar-header">
+            <figure class="logo">
+                <img src="../assets/img/dc-logo.png" alt="logo">
+            </figure>
+            <ul>
+                <li v-for="item in items" :key="item.text">
+                    <a :href="item.url">{{ item.text }}</a>
+                </li>
+            </ul>
+        </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
     background-color: white;
-    height: 100px;
+    height: 120px;
+}
+
+header #navbar-header {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0;
 }
 
 ul {
