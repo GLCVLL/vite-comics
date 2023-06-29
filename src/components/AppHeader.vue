@@ -73,7 +73,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* header */
 header {
     background-color: white;
     height: 100px;
@@ -84,7 +83,6 @@ header {
 }
 
 ul {
-    list-style-type: none;
     display: flex;
 
     li {
