@@ -20,6 +20,7 @@ export default {
   <!-- main -->
   <AppMain />
   <!-- footer -->
+  <AppFooter />
 </template>
 
 <style lang="scss">

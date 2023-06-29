@@ -70,7 +70,7 @@ export default {
 
 /*navbar*/
 nav {
-    height: 150px;
+    height: 120px;
     background-color: #0c7cec;
 
     .container {
