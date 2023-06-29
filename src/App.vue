@@ -51,6 +51,7 @@ ul li a {
   text-decoration: none;
   color: black;
   padding: 5px;
+  font-family: open sans condensed;
 }
 
 /* header */
