@@ -1,4 +1,5 @@
 <script>
+import ComicCard from './products/ComicCard.vue'
 export default {
     data() {
         return {
@@ -31,14 +32,23 @@ export default {
             ]
         }
     },
+    components: { ComicCard },
+    props: {
+        products: Array
+    }
 }
 </script>
 
 <template>
     <main>
+        <div class="jumbotron"></div>
         <div class="container">
             <div class="content">
-                <h2>-- Content goes here --</h2>
+                <h4>CURRENT SERIES</h4>
+                <ComicCard v-for="product in products" :key="product.thumb" :product="product" />
+                <div class="load-more">
+                    <a href="#">LOAD MORE</a>
+                </div>
             </div>
         </div>
         <nav>
@@ -57,14 +67,45 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.jumbotron {
+    height: 400px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /*content*/
 .content {
-    height: 120px;
+    min-height: 500px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    position: relative;
 
-    h2 {
+    h4 {
+        background-color: #0c7cec;
         color: white;
+        padding: 5px 10px;
+        position: absolute;
+        top: -3%;
+        left: 0;
+    }
+}
+
+/*CARD*/
+.card {
+    flex-basis: calc(100% / 6);
+}
+
+.load-more {
+    margin: 30px auto;
+
+    a {
+        padding: 10px 15px;
+        background-color: #0c7cec;
+        color: white;
+        text-decoration: none;
     }
 }
 
